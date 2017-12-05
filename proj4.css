@@ -17,6 +17,14 @@ p {
 font-family: 'Oxygen', sans-serif;
 font-size: 18px;
 }
+
+ul {
+  font-family: 'Oxygen', sans-serif;
+font-size: 18px;
+}
+li {
+  margin: 20px;
+}
 /*GENERAL CLASSES*/
 .text-center {
   text-align: center;
@@ -80,6 +88,10 @@ height: 28px;
   font-size: 14px;
 }
 
+.ham {
+  margin-top: 30px;
+}
+
 .line {
   height: 1px;
   background-color: black;
@@ -106,7 +118,15 @@ height: 28px;
 }
 /*THE WHERE*/
 .where {
-  margin-top: 30px;
+  margin-top: 8px;
+}
+
+.space {
+  margin-top: 55px;
+}
+
+.space2 {
+  margin-top: 35px;
 }
 /*THE WHY*/
 .cap-style {
@@ -116,6 +136,16 @@ font-size: 14px;
 .cap-span {
   font-weight: bold;
   color: #631804;
+}
+.highlight-qt {
+   font-weight: bold;
+  color: #631804;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    
 }
 /*ALL API: GOOGLE MAPS, TWITTER, FLICKR*/
 /*GOOGLE MAPS*/
