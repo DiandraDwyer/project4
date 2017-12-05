@@ -29,9 +29,13 @@ font-weight: bold;
 
 .capn {
  color: #4c4c4c;
+ font-size: 16px;
 }
 
-
+a {
+   color: red;
+   text-decoration: none;
+}
 
 /*VICE HEADER*/
 
@@ -105,19 +109,31 @@ height: 28px;
   margin-top: 30px;
 }
 /*THE WHY*/
-
+.cap-style {
+  font-family: 'Oxygen', sans-serif;
+font-size: 14px;
+}
+.cap-span {
+  font-weight: bold;
+  color: #631804;
+}
 /*ALL API: GOOGLE MAPS, TWITTER, FLICKR*/
 /*GOOGLE MAPS*/
      #map {
         height: 600px;
         width: 100%;
        }
+       
+       .imge-size {
+        height: 200px;
+        width: 400px;
+       }
 /* TWITTER*/
 #twitter {
   font-family: 'Oxygen', sans-serif;;
-  background-color: #c1f3ff;
+  background-color: #ffa58e;
   width: 100%;
-  height: 100%;
+  height: 800px;
 }
 
 /*FLICKR*/
@@ -161,7 +177,7 @@ height: 28px;
 }
 
 #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    background-color: black; 
 }
 
 
@@ -227,6 +243,7 @@ height: 28px;
   background: rgba(243, 243, 243, 0.75);
   box-shadow: 0 1px 0.125em #333;
 }
+
 
 article .container {
   width: 600px;

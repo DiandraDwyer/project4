@@ -4,7 +4,7 @@
 // Flickr
 
 var html = "";
-var apiUrl = "https://api.flickr.com/services/feeds/photos_public.gne?tags=coralbleaching&tagmode=any&format=json&jsoncallback=?";
+var apiUrl = "https://api.flickr.com/services/feeds/photos_public.gne?tags=bleachedcoral&tagmode=any&format=json&jsoncallback=?";
 
 
 
@@ -45,27 +45,28 @@ $(document).ready(function() {
           center: greatBarrierReef
         });
         
-          var coralLabel1 = "<h1>Great Barrier Reef</h1>" + "<img src= 'images/gbr.jpg'>";
-  var coralLabel2 = "Great Mayan Reef";
-    var coralLabel3 = "Astrolabe Reef";
-        var coralLabel5 = "Pedro Bank";
-        var coralLabel6 = "Kimbe Bay";
-          var coralLabel7 = "Qixingyan";
+          var coralLabel1 = "<h1>Great Barrier Reef</h1>" + "<p> Status: Bleached </p>" + "<img src= 'images/great.png' class = 'imge-size'>";
+  var coralLabel2 = "<h1>Great Mayan Reef</h1>"+ "<p> Status: Bleached </p>" + "<img src= 'images/mexico.png' class = 'imge-size'>" ;
+    var coralLabel3 = "<h1>Astrolabe Reef</h1>" + "<p> Status: Bleached </p>" + "<img src= 'images/astrolabe.jpg' class = 'imge-size'>";
+        var coralLabel5 = "<h1>Pedro Bank</h1>" + "<p> Status: Bleached - Recovering </p>" + "<img src= 'images/pedro.jpg' class = 'imge-size'>";
+        var coralLabel6 = "<h1>Kimbe Bay</h1>" + "<p> Status: Bleached </p>" + "<img src = 'images/kimbe.jpg' class = 'imge-size'>";
+          var coralLabel7 = "<h1>Qixingyan</h1>" + "<p> Status: Recovered </p>" + "<img src= 'images/taiwan.jpg' class = 'imge-size'>";
             var coralLabel8 = "7";
-              var coralLabel9 = "Apo Reef";
-                var coralLabel10 = "Tubbataha Reef";
-                  var coralLabel11 = "Ningaloo Reef";
-                    var coralLabel12 = "Pickles Reef";
-                      var coralLabel13 = "Sekiseishoko Coral Reef";
-                        var coralLabel14 = "New Calcedonia Reef";
+              var coralLabel9 = "<h1>Apo Reef</h1>"+ "<p> Status: Bleached </p>" + "<img src = 'images/apo.jpg' class = 'imge-size'>";
+                var coralLabel10 = "<h1>Tubbataha Reef</h1>"+ "<p> Status: Bleached </p>" + "<img src = 'images/tubataha.png' class = 'imge-size'>";
+                  var coralLabel11 = "<h1>Ningaloo Reef</h1>" + "<p> Status: Bleached - Recovering </p>" + "<img src= 'images/ningaloo.jpg' class = 'imge-size'>";
+                    var coralLabel12 = "<h1>Pickles Reef</h1>"+ "<p> Status: Bleached </p>" + "<img src= 'images/pickles.jpg' class = 'imge-size'>";
+                      var coralLabel13 = "<h1>Sekiseishoko Coral Reef</h1>"+ "<p> Status: Dead </p>" + "<img src= 'images/japan.jpg' class = 'imge-size'>";
+                        var coralLabel14 = "<h1>New Caledonia Reef</h1>" + "<p> Status: Recovered (Some coral death)</p>" + "<img src= 'images/caledonia.jpeg' class = 'imge-size'>";
                           var coralLabel15 = "14";
                             var coralLabel16 = "15";
                               var coralLabel17 = "16";
                                 var coralLabel18 = "17";
                                   var coralLabel19 = "18";
-                                    var coralLabel20 = "Amazon Reef";
-                                      var coralLabel21 = "Maldives' Reef";
-                                        var coralLabel22 = "Flower Garden Banks National Marine Sanctuary";
+                                    var coralLabel20 = "<h1>Amazon Reef</h1>"+ "<p> Status: Bleached </p>" + "<img src= 'images/amazon.jpg' class = 'imge-size'>";
+                                      var coralLabel21 = "<h1>Maldives' Reef</h1>"+ "<p> Status: Bleached </p>" + "<img src= 'images/maldives.jpeg' class = 'imge-size'>";
+                                        var coralLabel22 = "<h1>Flower Garden Banks National Marine Sanctuary</h1>" + "<p> Status: Bleached </p>" + "<img src= 'images/florida.jpg' class = 'imge-size'>";
+                                        var coralLabel23 = "<h1>Jarvis Island Reef</h1>"+ "<p> Status: Dead </p>" + "<img src= 'images/jarvis.jpg' class = 'imge-size'>";
 
   var popup1 = new google.maps.InfoWindow({
     content: coralLabel1
@@ -136,6 +137,9 @@ $(document).ready(function() {
   });
        var popup22 = new google.maps.InfoWindow({
     content: coralLabel22
+  });
+       var popup23 = new google.maps.InfoWindow({
+    content: coralLabel23
   });
 
       
@@ -310,7 +314,14 @@ $(document).ready(function() {
           marker22.addListener('click', function() {
     popup22.open(map, marker22);
   });  
-                      
+                        var marker23 = new google.maps.Marker({
+          position: {lat: 6.365189, lng:  -162.413979},
+          map: map
+        });
+                 
+          marker23.addListener('click', function() {
+    popup23.open(map, marker23);
+  });               
       }
       
 //BACK TO TOP BUTTON
